@@ -26,3 +26,37 @@ def day_of_week(year, month, day):
             5 * ((year - 1) % 4) +
             4 * ((year -1) % 100) +
             6 * ((year -1) % 400)) % 7
+
+def days_in_month(year, month):
+    number_of_days = {1: 31,
+                      2: 28,
+                      3: 31,
+                      4: 30,
+                      5: 31, 
+                      6: 30,
+                      7: 31,
+                      8: 31,
+                      9: 30,
+                      10: 31,
+                      11:30,
+                      12: 31}
+    if is_leap_year(year):
+        number_of_days[2] = 29
+    
+    return number_of_days[month]
+
+def create_month_block(year, month):
+    number_of_days = days_in_month(year, month)
+    first_day = day_of_week(year, month, 1)
+
+    month_block = [[None for _ in range(7)] for _ in range(6)]
+
+    row = 0
+    for day_offset, day in enumerate(range(1, number_of_days + 1)):
+        weekday = (first_day + day_offset) % 7
+        month_block[row][weekday] = day
+        
+        if weekday == 6:
+            row += 1
+
+    return month_block
