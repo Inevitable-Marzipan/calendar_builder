@@ -24,7 +24,17 @@ table, th, td {
   grid-template-columns: auto auto auto;
 }
 
+.full {
+  color: black;
+  background-color: white;
+}
+
 .empty {
   color: grey;
   background-color: grey;
+}
+
+.weekend {
+  color: black;
+  background-color: skyblue;
 }

@@ -23,12 +23,12 @@ def test_create_html_month_block():
   </tr>
   <tr>
     <td class="empty">_</td>
-    <td>1</td>
-    <td>2</td>
-    <td>3</td>
-    <td>4</td>
-    <td>5</td>
-    <td>6</td>
+    <td class="full">1</td>
+    <td class="full">2</td>
+    <td class="full">3</td>
+    <td class="full">4</td>
+    <td class="full">5</td>
+    <td class="full">6</td>
   </tr>
 </table>"""
 

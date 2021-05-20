@@ -20,6 +20,6 @@ def create_html_month_block(month, month_block):
                     if day is None:
                         td("_", cls="empty")
                     else:
-                        td(day)
+                        td(day, cls="full")
 
     return month_table
