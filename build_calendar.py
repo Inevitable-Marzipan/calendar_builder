@@ -11,6 +11,9 @@ if __name__ == "__main__":
     
     doc = dominate.document(title=f'Year {year} calendar')
 
+    with doc.head:
+        link(rel='stylesheet', href='style.css')
+
     with doc:
         for month in range(1, 13):
             month_block = create_month_block(year, month)
