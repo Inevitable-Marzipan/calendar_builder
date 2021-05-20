@@ -18,7 +18,7 @@ def create_html_month_block(month, month_block):
             with tr():
                 for day in row:
                     if day is None:
-                        td(" ")
+                        td("_", cls="empty")
                     else:
                         td(day)
 

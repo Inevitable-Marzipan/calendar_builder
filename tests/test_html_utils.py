@@ -1,4 +1,4 @@
-from src.html_utils2 import create_html_month_block
+from src.html_utils import create_html_month_block
 
 def test_create_html_month_block():
 
@@ -13,16 +13,16 @@ def test_create_html_month_block():
     <th colspan="7">January</th>
   </tr>
   <tr class="header_row">
-    <th>Sunday</th>
-    <th>Monday</th>
-    <th>Tuesday</th>
-    <th>Wednesday</th>
-    <th>Thursday</th>
-    <th>Friday</th>
-    <th>Saturday</th>
+    <th>Sun</th>
+    <th>Mon</th>
+    <th>Tue</th>
+    <th>Wed</th>
+    <th>Thu</th>
+    <th>Fri</th>
+    <th>Sat</th>
   </tr>
   <tr>
-    <td> </td>
+    <td class="empty">_</td>
     <td>1</td>
     <td>2</td>
     <td>3</td>
