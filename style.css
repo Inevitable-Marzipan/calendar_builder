@@ -10,7 +10,6 @@ table, th, td {
 
   th, td {
     padding: 0px;
-    /*margin: auto;*/
     margin: 0px;
   }
 
@@ -37,4 +36,10 @@ table, th, td {
 .weekend {
   color: black;
   background-color: skyblue;
+}
+
+.year {
+  color: whitesmoke;
+  background-color: cadetblue;
+  text-align: center;
 }
