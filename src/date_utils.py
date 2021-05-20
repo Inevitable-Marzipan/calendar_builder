@@ -12,6 +12,15 @@ month_name_map = \
      11: "November",
      12: "December"}
 
+day_name_map = \
+    {0: "Sunday",
+     1: "Monday",
+     2: "Tuesday",
+     3: "Wednesday",
+     4: "Thursday",
+     5: "Friday",
+     6: "Saturday"}
+
 def is_leap_year(year):
     
     return ((year % 4) == 0) and \
