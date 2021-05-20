@@ -16,10 +16,13 @@ def create_html_month_block(month, month_block):
         
         for row in month_block:
             with tr():
-                for day in row:
+                for weekday, day in enumerate(row):
                     if day is None:
                         td("_", cls="empty")
                     else:
-                        td(day, cls="full")
+                        if (weekday == 0) or (weekday == 6):
+                            td(day, cls="weekend")
+                        else:
+                            td(day, cls="full")
 
     return month_table

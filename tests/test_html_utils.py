@@ -28,7 +28,7 @@ def test_create_html_month_block():
     <td class="full">3</td>
     <td class="full">4</td>
     <td class="full">5</td>
-    <td class="full">6</td>
+    <td class="weekend">6</td>
   </tr>
 </table>"""
 
