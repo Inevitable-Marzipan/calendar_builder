@@ -15,7 +15,7 @@ def main(args=None):
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--year", type=int, dest="year", default=2021)
-    parser.add_argument("--output_file", type=str, dest="output_file")
+    parser.add_argument("--output_file", type=str, dest="output_file", default="calendar.html")
 
     parsed_args = parser.parse_args(args)
     base_year = parsed_args.year
