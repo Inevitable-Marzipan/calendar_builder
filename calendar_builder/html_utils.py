@@ -1,5 +1,5 @@
-from src.date_utils import month_name_map
-from src.date_utils import day_name_map
+from .date_utils import month_name_map
+from .date_utils import day_name_map
 from dominate.tags import *
 
 def create_html_month_block(month, month_block):

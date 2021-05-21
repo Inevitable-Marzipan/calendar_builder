@@ -1,4 +1,4 @@
-from src.html_utils import create_html_month_block
+from calendar_builder.html_utils import create_html_month_block
 
 def test_create_html_month_block():
 

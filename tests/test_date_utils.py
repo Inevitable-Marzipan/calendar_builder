@@ -1,8 +1,8 @@
 import pytest
 
-from src.date_utils import is_leap_year
-from src.date_utils import day_of_week
-from src.date_utils import create_month_block
+from calendar_builder.date_utils import is_leap_year
+from calendar_builder.date_utils import day_of_week
+from calendar_builder.date_utils import create_month_block
 
 
 @pytest.mark.parametrize("year, is_leap", [(1700, False), (1800, False), (1600, True), (2000, True)])
