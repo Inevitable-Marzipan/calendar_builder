@@ -1,8 +1,8 @@
 import dominate
 from dominate.tags import *
 
-from src.date_utils import create_month_block
-from src.html_utils import create_html_month_block
+from calendar_builder.date_utils import create_month_block
+from calendar_builder.html_utils import create_html_month_block
 
 
 if __name__ == "__main__":
